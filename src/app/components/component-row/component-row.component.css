@@ -1,0 +1,44 @@
+.comp-row {
+  display: flex;
+  align-items: center;
+  border: 1px solid #4e4c4c;
+  padding: 2px;
+}
+
+.comp-row.no-border-top {
+  border-top: none;
+}
+
+.comp-title {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 500;
+  width: 25%;
+  padding: 4px;
+}
+
+.comp-button-wrap {
+  display: inline-block;
+  height: 25px;
+  width: 25px;
+  margin-right: 6px;
+}
+
+.comp-title button {
+  margin: 0;
+  border-radius: 4px;
+  height: 25px;
+  padding: 2px 4px;
+}
+
+.comp-buckets {
+  display: flex;
+}
+
+.comp-bucket-item {
+  border: 1px solid #4e4c4c;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin: 0 2px;
+}

@@ -1,0 +1,48 @@
+{
+  "id": "CAP",
+  "componentName": "Capital",
+  "buckets": [
+    {
+      "id": "1D-30D",
+      "value": 4562271,
+      "percentage": 35
+    },
+    {
+      "id": "31D-2M",
+      "value": 7576767,
+      "percentage": 65
+    }
+  ],
+  "subComponents": [
+    {
+      "id": "CAP_GL1",
+      "componentName": "Capital_GL1",
+      "buckets": [
+        {
+          "id": "1D-30D",
+          "value": 87654345,
+          "percentage": 50
+        },
+        {
+          "id": "31D-2M",
+          "value": 5432321,
+          "percentage": 45
+        }
+      ],
+      "subComponents": [
+        {
+          "id": "CAP_GL1.1",
+          "componentName": "Capital_GL1.1",
+          "buckets": [
+            {
+              "id": "1D-30D",
+              "value": 1234321,
+              "percentage": 25
+            }
+          ],
+          "subComponents": []
+        }
+      ]
+    }
+  ]
+}

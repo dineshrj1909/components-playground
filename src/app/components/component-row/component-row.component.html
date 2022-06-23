@@ -1,0 +1,25 @@
+<div class="comp-row" [ngClass]="level > 0 ? 'no-border-top' : ''">
+  <div class="comp-title">
+    <span class="comp-button-wrap" [ngStyle]="{ marginLeft: level * 8 + 'px' }">
+      <button
+        *ngIf="componentData.subComponents.length > 0"
+        (click)="expanded = !expanded"
+      >
+        {{ expanded ? "C" : "O" }}
+      </button>
+    </span>
+    {{ componentData.componentName }}
+  </div>
+  <div class="comp-buckets">
+    <div *ngFor="let bucket of componentData.buckets" class="comp-bucket-item">
+      {{ bucket.value }}
+    </div>
+  </div>
+</div>
+<ng-template [ngIf]="expanded">
+  <app-component-row
+    *ngFor="let subComponent of componentData.subComponents"
+    [componentData]="subComponent"
+    [level]="level + 1"
+  ></app-component-row>
+</ng-template>
